@@ -11,11 +11,12 @@ Multichar_Symbols
 %<SI%_3%-4%>
 %<SI%_5%-6%>
 %<SI%_7%-8%>
-%<SI%_9%-10%>
-%<SI%_11%-10%>
+%<SI%_9%-1%0%>
+%<SI%_11%-1%0%>
 %<SI%_14%>
 %<SI%_15%>
-%<SI%_17%>
+
+%<cm%>           ! Comma
 
 %{u%}
 %{n%}
@@ -31,6 +32,8 @@ LEXICON Root
 
 Prefixes ; 
 
+Punctuation ; 
+
 LEXICON N_1-2
 
 %<n%>%<SI%_1%-2%>%[%+um%]%<sg%>: # ; 
@@ -38,8 +41,8 @@ LEXICON N_1-2
 
 LEXICON N_9-10
 
-%<n%>%<SI%_9%-10%>%[%+in%]%<sg%>: # ; 
-%<n%>%<SI%_9%-10%>%[%+tin%]%<pl%>: # ; 
+%<n%>%<SI%_9%-1%0%>%[%+in%]%<sg%>: # ; 
+%<n%>%<SI%_9%-1%0%>%[%+tin%]%<pl%>: # ; 
 
 LEXICON Prefixes 
 
@@ -57,3 +60,7 @@ LEXICON Stems-9-10
 
 dlovu:dlovu N_9-10 ; ! "elephant"
 
+
+LEXICON Punctuation 
+
+%,%<cm%>:%, # ; 
