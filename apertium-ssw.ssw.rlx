@@ -1,0 +1,10 @@
+SOFT-DELIMITERS = "<,>" cm ;
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" "<$.>" "<$:>" "<$!>" "<$?>" "<$|>" ;
+
+SUBREADINGS = LTR ; 
+
+LIST N = n ;
+
+SECTION
+
+SELECT (x) ; 

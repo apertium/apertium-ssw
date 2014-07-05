@@ -1,5 +1,6 @@
 * text=auto !eol
 /Makefile -text
 /apertium-ssw.ssw.lexc -text
+/apertium-ssw.ssw.rlx -text
 /apertium-ssw.ssw.twoc -text
 /apertium-ssw.ssw.twol -text

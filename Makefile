@@ -7,5 +7,6 @@ all:
 
 	hfst-compose-intersect -1 ssw.mor.hfst -2 ssw.twoc.hfst | hfst-fst2fst -O -o ssw.automorf.hfst
 
+	cg-comp apertium-ssw.ssw.rlx ssw.rlx.bin
 clean:
-	rm *.hfst
+	rm *.hfst *.rlx.bin
