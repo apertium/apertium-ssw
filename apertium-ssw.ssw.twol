@@ -1,0 +1,16 @@
+Alphabet
+
+ a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+ %{u%}:0 %{a%}:a
+
+ %>:0 ; 
+
+Sets 
+
+Vow = a e i o u ; 
+
+Rules 
+
+"umu- replaces um- before monosyllabic stems"
+%{u%}:u <=> _ ; 

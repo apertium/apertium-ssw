@@ -1,0 +1,32 @@
+! We should probably have all the possible 
+! symbols on the surface (not morphotactic!) side here
+Alphabet
+
+ a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+ %<n%> %<sg%> %<pl%>
+
+ %<SI%_1%-2%> %<SI%_1a%-2a%>
+ %<SI%_3%-4%> %<SI%_5%-6%>
+ %<SI%_7%-8%> %<SI%_9%-10%>
+ %<SI%_11%-10%> %<SI%_14%>
+ %<SI%_15%> %<SI%_17%>
+
+
+ %[%+um%]:0  %[%+ba%]:0  ;
+
+Sets 
+
+Verb = %<v%> ;
+
+Rules 
+
+"Match prefixes +um"
+%[%+um%]:0 /<=  _ (:*) %[%+ba%]:0 ; 
+
+"Match prefixes +ba"
+%[%+ba%]:0 /<= _ (:*) %[%+um%]:0 ;
+
+
+! [+ba]ntfu<n><SI_1-2>[+ba]<pl>:bantfu
+
