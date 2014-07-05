@@ -13,7 +13,10 @@ Alphabet
  %<SI%_15%> %<SI%_17%>
 
 
- %[%+um%]:0  %[%+ba%]:0  ;
+ %[%+um%]:0  %[%+ba%]:0  
+ %[%+in%]:0  %[%+tin%]:0  
+
+;
 
 Sets 
 
@@ -26,6 +29,12 @@ Rules
 
 "Match prefixes +ba"
 %[%+ba%]:0 /<= _ (:*) %[%+um%]:0 ;
+
+"Match prefixes +in"
+%[%+in%]:0 /<=  _ (:*) %[%+tin%]:0 ; 
+
+"Match prefixes +tin"
+%[%+tin%]:0 /<= _ (:*) %[%+in%]:0 ;
 
 
 ! [+ba]ntfu<n><SI_1-2>[+ba]<pl>:bantfu

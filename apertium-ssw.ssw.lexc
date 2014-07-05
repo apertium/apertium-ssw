@@ -15,11 +15,15 @@ Multichar_Symbols
 %<SI%_11%-10%>
 %<SI%_14%>
 %<SI%_15%>
+%<SI%_17%>
 
 %{u%}
+%{n%}
 
 %[%+um%]
 %[%+ba%]
+%[%+in%]
+%[%+tin%]
 
 %> 
 
@@ -27,21 +31,29 @@ LEXICON Root
 
 Prefixes ; 
 
-LEXICON NUMBER 
+LEXICON N_1-2
 
-%[%+um%]%<sg%>: # ;
-%[%+ba%]%<pl%>: # ; 
+%<n%>%<SI%_1%-2%>%[%+um%]%<sg%>: # ; 
+%<n%>%<SI%_1%-2%>%[%+ba%]%<pl%>: # ; 
 
-LEXICON N-12
+LEXICON N_9-10
 
-%<n%>%<SI%_1%-2%>: NUMBER ; 
+%<n%>%<SI%_9%-10%>%[%+in%]%<sg%>: # ; 
+%<n%>%<SI%_9%-10%>%[%+tin%]%<pl%>: # ; 
 
 LEXICON Prefixes 
 
-%[%+um%]:um%{u%}%> Stems-12 ; 
-%[%+ba%]:ba%> Stems-12 ; 
+%[%+um%]:um%{u%}%> Stems-1-2 ; 
+%[%+ba%]:ba%> Stems-1-2 ; 
 
-LEXICON Stems-12 
+%[%+in%]:i%{n%}%> Stems-9-10 ; 
+%[%+tin%]:ti%{n%}%> Stems-9-10 ; 
 
-ntfu:ntfu N-12 ; ! "person"
+LEXICON Stems-1-2 
+
+ntfu:ntfu N_1-2 ; ! "person"
+
+LEXICON Stems-9-10
+
+dlovu:dlovu N_9-10 ; ! "elephant"
 
